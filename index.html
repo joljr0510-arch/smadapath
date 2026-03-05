@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>CareerPath AI - Konselor Jurusan</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+</head>
+
+<body>
+
+<h1>CareerPath AI</h1>
+<p>Konselor Digital Pemilihan Kelas SMA</p>
+
+<div class="card">
+
+<h2>Data Siswa</h2>
+
+<input id="nama" placeholder="Nama">
+<input id="kelas" placeholder="Kelas">
+<input id="absen" placeholder="Absen">
+
+<h2>Nilai Kelas 10</h2>
+
+<input id="indo" placeholder="Bahasa Indonesia">
+<input id="inggris" placeholder="Bahasa Inggris">
+<input id="mtk" placeholder="Matematika">
+<input id="ipa" placeholder="IPA">
+<input id="ips" placeholder="IPS">
+<input id="info" placeholder="Informatika">
+<input id="sejarah" placeholder="Sejarah">
+<input id="agama" placeholder="Agama">
+<input id="pkn" placeholder="Pendidikan Pancasila">
+<input id="pkwu" placeholder="PKWU">
+<input id="jawa" placeholder="Bahasa Jawa">
+
+<h2>Minat dan Bakat</h2>
+
+<select id="minat">
+<option>Sains</option>
+<option>Teknologi</option>
+<option>Bahasa</option>
+<option>Sosial</option>
+<option>Bisnis</option>
+</select>
+
+<input id="cita" placeholder="Cita-cita">
+
+<br><br>
+
+<button onclick="hitung()">Analisis AI</button>
+
+</div>
+
+<div class="card">
+
+<h2>Hasil Rekomendasi</h2>
+
+<canvas id="grafik"></canvas>
+
+<div id="hasil"></div>
+
+<button onclick="downloadPDF()">Download Laporan PDF</button>
+
+</div>
+
+<div class="card">
+
+<h2>AI Chat Konselor</h2>
+
+<div id="chatbox"></div>
+
+<input id="chatinput" placeholder="Tanya tentang jurusan...">
+
+<button onclick="chat()">Kirim</button>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
